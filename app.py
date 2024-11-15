@@ -1,9 +1,12 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from nltk.tokenize import word_tokenize
+
+nltk.download('stopwords')
 
 
 if 'emails' not in st.session_state:
