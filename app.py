@@ -7,6 +7,7 @@ from nltk.stem.porter import PorterStemmer
 from nltk.tokenize import word_tokenize
 
 nltk.download('stopwords')
+nltk.download('punkt')
 
 
 if 'emails' not in st.session_state:
