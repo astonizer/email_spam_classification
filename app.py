@@ -8,6 +8,8 @@ from nltk.tokenize import word_tokenize
 
 nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 
 if 'emails' not in st.session_state:
