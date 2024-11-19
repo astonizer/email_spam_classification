@@ -1,16 +1,14 @@
 import streamlit as st
 import pandas as pd
 import pickle
+
 import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
+
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from nltk.tokenize import word_tokenize
-
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
-
 
 if 'emails' not in st.session_state:
     st.session_state.emails = [
